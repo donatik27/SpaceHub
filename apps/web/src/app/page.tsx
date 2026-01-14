@@ -328,43 +328,36 @@ export default function HomePage() {
 
       {/* Development Roadmap */}
       <div className="mt-8 mb-12 bg-card pixel-border border-primary/40 p-6">
-        <div className="mb-6">
+        <div className="mb-4">
           <h3 className="font-bold text-primary text-xl mb-2 font-mono">🛸 DEVELOPMENT_ROADMAP</h3>
-          <p className="text-xs text-muted-foreground font-mono">&gt; Tracking project evolution phases</p>
+          <p className="text-xs text-muted-foreground font-mono mb-4">&gt; Tracking project evolution phases</p>
         </div>
 
-        {/* Phases Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        {/* Phases - Horizontal List */}
+        <div className="space-y-2 mb-6">
           {/* Phase 1 - Completed */}
-          <div className="bg-primary/10 pixel-border border-primary/50 p-4 relative overflow-hidden">
-            <div className="absolute top-2 right-2 text-xl">✅</div>
-            <h4 className="font-bold text-primary mb-1 font-mono line-through">PHASE_1: CORE_INFRASTRUCTURE</h4>
-            <p className="text-xs text-muted-foreground font-mono mb-2">&gt; Database, API, UI framework setup</p>
-            <div className="text-xs font-mono text-primary/60">STATUS: COMPLETED</div>
+          <div className="text-sm font-mono">
+            <span className="text-primary line-through">PHASE_1: Infrastructure & Core Setup</span>
+            <span className="ml-2 text-xs">✅</span>
           </div>
 
           {/* Phase 2 - Current (Active) */}
-          <div className="bg-primary/20 pixel-border border-primary p-4 relative overflow-hidden alien-glow">
-            <div className="absolute top-2 right-2 text-2xl animate-pulse">🔄</div>
-            <h4 className="font-bold text-primary mb-1 font-mono">PHASE_2: MAIN_FEATURES 🎯</h4>
-            <p className="text-xs text-muted-foreground font-mono mb-2">&gt; Trader tracking, Smart Markets, On-chain data</p>
-            <div className="text-xs font-mono text-primary font-bold">STATUS: ACTIVE_NOW</div>
+          <div className="text-sm font-mono">
+            <span className="text-primary font-bold">PHASE_2: Main Features Launch</span>
+            <span className="ml-2 text-primary animate-pulse">...</span>
+            <span className="ml-2 text-xs text-muted-foreground">(Trader tracking, Smart Markets, On-chain data)</span>
           </div>
 
           {/* Phase 3 - Upcoming */}
-          <div className="bg-purple-500/10 pixel-border border-purple-500/50 p-4 relative overflow-hidden">
-            <div className="absolute top-2 right-2 text-2xl animate-pulse">💫</div>
-            <h4 className="font-bold text-purple-400 mb-1 font-mono">PHASE_3: ADVANCED_ANALYTICS</h4>
-            <p className="text-xs text-muted-foreground font-mono mb-2">&gt; Historical data, Performance charts, Correlations</p>
-            <div className="text-xs font-mono text-purple-400/60">STATUS: COMING_SOON</div>
+          <div className="text-sm font-mono text-purple-400/70">
+            <span>PHASE_3: Advanced Analytics</span>
+            <span className="ml-2 text-xs text-muted-foreground">(Planning: Historical data, Performance charts)</span>
           </div>
 
           {/* Phase 4 - Future */}
-          <div className="bg-blue-500/10 pixel-border border-blue-500/50 p-4 relative overflow-hidden">
-            <div className="absolute top-2 right-2 text-2xl animate-pulse">🚀</div>
-            <h4 className="font-bold text-blue-400 mb-1 font-mono">PHASE_4: AI_PREDICTIONS</h4>
-            <p className="text-xs text-muted-foreground font-mono mb-2">&gt; Smart alerts, Pattern recognition, Auto-discovery</p>
-            <div className="text-xs font-mono text-blue-400/60">STATUS: FUTURE_PLAN</div>
+          <div className="text-sm font-mono text-blue-400/70">
+            <span>PHASE_4: AI Predictions & Alerts</span>
+            <span className="ml-2 text-xs text-muted-foreground">(Planning: Pattern recognition, Auto-discovery)</span>
           </div>
         </div>
 
