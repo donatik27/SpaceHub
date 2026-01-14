@@ -21,7 +21,7 @@ export async function GET() {
         rarityScore: t.rarityScore
       }))
     
-    console.log(`📊 Traders: S=${smartTraders.filter(t => t.tier === 'S').length}, A=${smartTraders.filter(t => t.tier === 'A').length}, B=${smartTraders.filter(t => t.tier === 'B').length}`)
+    console.log(`📊 Traders: S=${smartTraders.filter((t: any) => t.tier === 'S').length}, A=${smartTraders.filter((t: any) => t.tier === 'A').length}, B=${smartTraders.filter((t: any) => t.tier === 'B').length}`)
     
     // 2. Отримуємо топ маркети (активні) - 20 маркетів
     const marketsRes = await fetch('http://localhost:3000/api/markets?limit=20&sortBy=volume&status=active')

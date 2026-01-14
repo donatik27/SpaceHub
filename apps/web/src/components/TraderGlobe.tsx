@@ -289,6 +289,7 @@ export default function TraderGlobe({ traders }: TraderGlobeProps) {
         clearTimeout(inactivityTimerRef.current);
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
