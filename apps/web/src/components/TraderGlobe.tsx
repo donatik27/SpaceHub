@@ -160,7 +160,6 @@ function TraderPin({
         onPointerOver={handlePointerOver}
         onPointerOut={handlePointerOut}
         onClick={handleClick}
-        style={{ cursor: 'pointer' }}
       >
         <sphereGeometry args={[0.03, 16, 16]} />
         <meshBasicMaterial color={tierColor} />
