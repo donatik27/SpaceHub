@@ -42,7 +42,7 @@ export default function MarketsPage() {
       setMarkets(data)
       setLastUpdate(new Date().toISOString())
       
-      console.log(`✅ Loaded ${sorted.length} markets`)
+      console.log(`✅ Loaded ${data.length} markets`)
       
     } catch (error) {
       console.error('Failed to fetch markets:', error)
